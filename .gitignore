@@ -1,0 +1,86 @@
+# ==============================================================================
+# kmp-templates-libs (.gitignore)
+# ==============================================================================
+
+# --- Secrets, Local Environment & Credentials ---
+.env
+.env.*
+!.env.example
+local.properties
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+*.secret.bru
+**/bruno/environments/*.local.bru
+
+# --- Kotlin Toolchain (Amper), Gradle, JVM & Build Outputs ---
+build/
+out/
+.kotlin/
+.amper/
+.gradle/
+*.iml
+*.hprof
+*.jfr
+hs_err_pid*.log
+replay_pid*.log
+
+# --- Web / WasmJS / Node ---
+node_modules/
+kotlin-js-store/
+dist/
+
+# --- Android ---
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+.cxx/
+
+# --- Apple / Xcode / SwiftPM / iOS ---
+.build/
+.swiftpm/
+**/module.xcodeproj/*
+!**/module.xcodeproj/project.pbxproj
+**/xcshareddata/WorkspaceSettings.xcsettings
+xcuserdata/
+*.xcuserstate
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.moved-aside
+*.hmap
+
+# --- IDEs & Editors ---
+.idea/
+.vscode/
+.fleet/
+*.swp
+*.swo
+*~
+
+# --- Python (Git Hooks & Tooling) ---
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# --- OS, Logs & Temporary Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+*.log
+.tmp/
+tmp/
+
+# --- Local AI / Agent Tooling ---
+.claude/
+.cursor/
+.gemini/
+.antigravity/

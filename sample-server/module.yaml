@@ -1,0 +1,15 @@
+product: jvm/app
+
+dependencies:
+  - ../ktor-wasm-seo
+  - $ktor.server.netty
+  - $libs.logback.classic
+
+settings:
+  ktor: enabled
+  jvm:
+    mainClass: codes.cy.kit.sample.seo.SampleSeoServerKt
+
+test-dependencies:
+  - $ktor.server.testHost
+  - $libs.kotlinx.coroutines.test

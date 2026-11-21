@@ -1,0 +1,24 @@
+repositories:
+  - id: mavenLocal
+    url: mavenLocal
+    publish: true
+    resolve: true
+
+settings:
+  kotlin:
+    explicitApi: strict
+  publishing:
+    enabled: true
+    group: codes.cy.kit
+    version: 0.1.0
+    publishSources: true
+    pom:
+      url: https://github.com/cy-codes/ktor-wasm-seo
+      licenses:
+        - name: The Apache License, Version 2.0
+          url: https://www.apache.org/licenses/LICENSE-2.0.txt
+      developers:
+        - id: cy
+          name: cy
+      scm:
+        url: https://github.com/cy-codes/ktor-wasm-seo

@@ -1,0 +1,23 @@
+product: jvm/lib
+
+apply:
+  - ../common-lib.module-template.yaml
+
+dependencies:
+  - $ktor.server.core: exported
+  - $ktor.server.htmlBuilder: exported
+  - $ktor.server.autoHeadResponse
+  - $kotlin.serialization.json: exported
+
+settings:
+  kotlin:
+    serialization: enabled
+  ktor: enabled
+  publishing:
+    pom:
+      name: ktor-wasm-seo
+      description: Ktor JVM dynamic SEO HTML shell, safe JSON-LD encoding, sitemap/robots builders, and Kotlin Wasm ES-module static serving.
+
+test-dependencies:
+  - $ktor.server.testHost
+  - $libs.kotlinx.coroutines.test
